@@ -3,9 +3,41 @@
 :root {
   /* css variables with theme colors,
     names have to start with "--" */
-  --color-1: #b9af9e;
+  --color-1: #A0E7E5;
+  --color-2: #5885AF;
+  --color-3: #FFA384;
+
 }
 
 body {
-    
+    background-color: var(--color-2);
+    font-family: 'Patua One', sans-serif;
+    color: var(--color-3);
 }
+
+h1 {
+  color: #A0E7E5;
+}
+
+p {
+  margin: 10px;
+  border: 1px color: var(--color-1);
+  padding: 20px;
+  font-family: 'Anek Malayalam', sans-serif;
+}
+
+img {
+  width: 50%;
+}
+ body{
+  height: 100vh;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: auto auto 1fr;
+   grid-template-areas:
+      'header  image'
+      'lead    image'
+      'signup  image';
+      justify-items: stretch;
+    align-items: center;
+ }
